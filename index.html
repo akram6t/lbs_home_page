@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="icon" href="https://swatigour1.github.io/trysite/image/clglogo.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Montserrat&family=Open+Sans:wght@300;400&family=Poppins:wght@300;400&family=Roboto:wght@400;700&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* #my-navbar{ */
+            /* font-family: 'Lexend', sans-serif; */
+        /* } */
+
+        .font-bold {
+            font-weight: bold;
+            font-family: 'Open Sans', sans-sarif;
+        }
+
+        .custom-grid-facilities {
+            display: grid;
+            padding: 10px;
+            row-gap: 20px;
+            column-gap: 20px;
+            align-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        .nav-item .nav-link:hover {
+            color: #de0000;
+        }
+
+
+        .dropdown-menu .dropdown-item {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .dropdown-menu .dropdown-item:active {
+            background-color: #ffc1c1;
+        }
+
+        .dropdown-menu .dropdown-item:hover {
+            color: #de0000;
+        }
+
+        /* footer grid */
+        .footer_grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            row-gap: 20px;
+            column-gap: 10px;
+        }
+        
+        @media(max-width: 768px) {
+            html {
+                font-size: 90%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav id="my-navbar" class="position-sticky sticky-top navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img style="width: 45px; height: 45px" src="https://swatigour1.github.io/trysite/image/clglogo.png"
+                    alt="" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-size: 1.1rem; font-weight: bold">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">About</a></li>
+                            <li><a class="dropdown-item" href="#">Principal's Message</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Commities</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Awards</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Activities
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">LPL</a></li>
+                            <li><a class="dropdown-item" href="#">Sabrang</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">NSS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Infrastuctures
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Land and Building</a></li>
+                            <li><a class="dropdown-item" href="#">Classrooms</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Library</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Laboratories</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Departments
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">UG/PG</a></li>
+                            <li><a class="dropdown-item" href="#">Teacher's Training Course</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Biometric Attendence</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Admissions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Admission 2022-23</a></li>
+                            <li><a class="dropdown-item" href="#">UG/PG</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">B.ED</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">D.El.ED</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Affiliated Course
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Result</a></li>
+                            <li><a class="dropdown-item" href="#">Time Table</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Syllabus</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Alumni</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Recorded Lectures</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex gap-2" role="search">
+                    <button class="btn btn-warning" type="submit">Learnqoch</button>
+                    <button class="btn btn-primary" type="submit">Regisration</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--  carousel Header  { Big Image } -->
+
+    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img style="object-fit: cover; object-position: center; height: 70vh;"
+                    src="https://swatigour1.github.io/trysite/image/lbs1.jpeg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+                <img style="object-fit: cover; object-position: center; height: 70vh;"
+                    src="https://swatigour1.github.io/trysite/image/lbs3.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+                <img style="object-fit: cover; object-position: center; height: 70vh;"
+                    src="https://swatigour1.github.io/trysite/image/lbs2.jpg" class="d-block w-100" alt="..." />
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Facilities We Provide SECTION -->
+    <div class="container mt-5">
+        <h1 class="font-bold text-center">Facilities We Provide</h1>
+        <div class="custom-grid-facilities mt-5">
+            <div class="d-flex flex-column align-items-center p-2">
+                <img style="width: 50px; height: 50px;" src="https://swatigour1.github.io/trysite/image/multi.png"
+                    alt="">
+                <h4 class="mt-2 font-bold text-center">Multimedia</h4>
+            </div>
+            <div class="d-flex flex-column align-items-center p-2">
+                <img style="width: 50px; height: 50px;" src="https://swatigour1.github.io/trysite/image/wifi.png"
+                    alt="">
+                <h4 class="mt-2 font-bold text-center">Wifi</h4>
+            </div>
+            <div class="d-flex flex-column align-items-center p-2">
+                <img style="width: 50px; height: 50px;" src="https://swatigour1.github.io/trysite/image/library.png"
+                    alt="">
+                <h4 class="mt-2 font-bold text-center">Center Library</h4>
+            </div>
+            <div class="d-flex flex-column align-items-center p-2">
+                <img style="width: 50px; height: 50px;" src="https://swatigour1.github.io/trysite/image/bus1.png"
+                    alt="">
+                <h4 class="mt-2 font-bold text-center">Bus Facility</h4>
+            </div>
+            <div class="d-flex flex-column align-items-center p-2">
+                <img style="width: 50px; height: 50px;" src="https://swatigour1.github.io/trysite/image/auditorium.png"
+                    alt="">
+                <h4 class="mt-2 font-bold text-center">Auditorium</h4>
+            </div>
+            <div class="d-flex flex-column align-items-center p-2">
+                <img style="width: 50px; height: 50px;" src="https://swatigour1.github.io/trysite/image/sports.png"
+                    alt="">
+                <h4 class="mt-2 font-bold text-center">Sports Facility</h4>
+            </div>
+            <div class="d-flex flex-column align-items-center p-2">
+                <img style="width: 50px; height: 50px;" src="https://swatigour1.github.io/trysite/image/digital.png"
+                    alt="">
+                <h4 class="mt-2 font-bold text-center">Digitally Secured Campus</h4>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Contact US -->
+    <div class="container-fluid d-flex flex-column align-items-center px-3 py-5 text-white"
+        style="background-color: #0000b9;">
+        <h2 class="text-center"> <i>Education is the Menifestation of the Perfection already in Human:</i> </h2>
+        <h1 class="text-center mt-2 font-bold">Swami Vivekananda</h1>
+        <p class="text-center mt-2 h5">"Education empowers the people and thus a nation with qualities and capabilities
+            to survive and excel in their endeavors."</p>
+        <hr class="w-100">
+        <h1>Dr. Rajiv Khare</h1>
+        <h5>Founder & Chairman</h5>
+        <div class="mt-2 w-100  d-flex align-items-center justify-content-center gap-2">
+            <button class="btn btn-light h6 py-2">More About Us</button>
+            <button class="btn btn-light h6 py-2">Contact Us</button>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- life at your campus -->
+    <div class="container mt-5">
+        <h1 class="font-bold text-center">Life At Our Campus</h1>
+        <div class="custom-grid-facilities mt-5">
+            <img class="w-100 rounded-4 object-fit-cover" style="transition: 0.3s ease-in-out; object-position: center;"
+                src="https://swatigour1.github.io/trysite/image/glr2.jpg" alt="image">
+            <img class="w-100 rounded-4 object-fit-cover" style="transition: 0.3s ease-in-out; object-position: center;"
+                src="https://swatigour1.github.io/trysite/image/lpl1.jpg" alt="image">
+            <img class="w-100 rounded-4 object-fit-cover" style="transition: 0.3s ease-in-out; object-position: center;"
+                src="https://swatigour1.github.io/trysite/image/lpl2.jpg" alt="image">
+            <img class="w-100 rounded-4 object-fit-cover" style="transition: 0.3s ease-in-out; object-position: center;"
+                src="https://swatigour1.github.io/trysite/image/glr2.jpg" alt="image">
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+    <!-- LBS Harda by numbers -->
+    <!-- Facilities We Provide SECTION -->
+    <div class="container mt-5">
+        <h1 class="font-bold text-center">Facilities We Provide</h1>
+        <div class="custom-grid-facilities mt-5">
+            <div class="d-flex flex-column align-items-center p-2">
+                <img src="https://swatigour1.github.io/trysite/image/students.png" alt="">
+                <h4 class="mt-2 font-bold text-center">100</h4>
+                <h4 class="font-bold text-center">Students</h4>
+            </div>
+            <div class="d-flex flex-column align-items-center p-2">
+                <img src="https://swatigour1.github.io/trysite/image/faculty.png" alt="">
+                <h4 class="mt-2 font-bold text-center">50</h4>
+                <h4 class="font-bold text-center">Faculty Members</h4>
+            </div>
+            <div class="d-flex flex-column align-items-center p-2">
+                <img src="https://swatigour1.github.io/trysite/image/staff.png" alt="">
+                <h4 class="mt-2 font-bold text-center">100</h4>
+                <h4 class="font-bold text-center">Staff Members</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="container-fluid mt-5 px-2 py-4 text-light" style="background-color: #0000b9;">
+        <div class="footer_grid">
+            <div class="text-center ">
+                <img style="width: 50px; height: 50px;" src="https://swatigour1.github.io/trysite/image/clglogo.png"
+                    alt="logo">
+                <h4 class="mt-3">LBS COLLAGE</h4>
+            </div>
+            <div>
+                <h4>Important Links</h4>
+                <li class="nav-item list-unstyled">
+                    <a href="" style="color: whitesmoke;" class="nav-link">MPBSC</a>
+                    <a href="" style="color: whitesmoke;" class="nav-link">BHOPAL[BU]</a>
+                    <a href="" style="color: whitesmoke;" class="nav-link">NCTE</a>
+                    <a href="" style="color: whitesmoke;" class="nav-link">HIGER EDUCATION</a>
+                </li>
+            </div>
+            <div>
+                <h4>Contact Info</h4>
+                <li class="nav-item list-unstyled">
+                    <a class="nav-link" style="color: whitesmoke;"> <i class="fa fa-phone-volume"> </i> 07577-292067</a>
+                    <a class="nav-link" style="color: whitesmoke;" href="nav-link"> <i class="fa fa-envelope"> </i>
+                        lbsharda@gmail.com</a>
+                    <a class="nav-link" style="color: whitesmoke;" href="nav-link"> <i class="fa fa-globe"> </i>
+                        lbsharda.com</a>
+                    <a class="nav-link" style="color: whitesmoke;"> <i class="fa fa-thin fa-location-dot"> </i> Handia
+                        Road, National Highway 59A Harda ,Madhya Pradesh 461331</a>
+                </li>
+            </div>
+            <div>
+                <h4>Connect With Us</h4>
+                <li class="nav-item list-unstyled d-flex gap-3">
+                    <a class="nav-link" style="color: whitesmoke; font-size: 2rem;" href="nav-link"> <i
+                            class="fab fa-facebook"></i></a>
+                    <a class="nav-link" style="color: whitesmoke; font-size: 2rem;" href="nav-link"> <i
+                            class="fab fa-twitter"></i></a>
+                    <a class="nav-link" style="color: whitesmoke; font-size: 2rem;" href="nav-link"> <i
+                            class="fab fa-instagram"></i></a>
+                    <a class="nav-link" style="color: whitesmoke; font-size: 2rem;" href="nav-link"> <i
+                            class="fab fa-linkedin"></i></a>
+                    <a class="nav-link" style="color: whitesmoke; font-size: 2rem;" href="nav-link"> <i
+                            class="fab fa-youtube"></i></a>
+                </li>
+            </div>
+        </div>
+        <hr>
+        <h6 class="text-center">Copyright © 2023 LBS College | All Rights Reserved.</h6>
+    </footer>
+
+
+</body>
+
+</html>
